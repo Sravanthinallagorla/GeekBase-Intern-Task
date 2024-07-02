@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sing Up</title>
+    <style>
+        body{
+            border:1px solid#ccc;
+            width:300px;
+            padding:30px;;
+            margin:0 auto;
+            font-family:sans-serif;
+             width: 600px;
+            border-radius:10px;
+        }
+        h2{
+            margin:0;
+            font-size:30px;
+            text-align:center;
+        }
+        form{
+            font-family:serif;
+            font-weight:600;
+        }
+        label{
+            margin:4px;
+            font-size:18px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        input{
+            width:94%;
+            padding:12px;
+            outline:none;
+            font-size:16px;
+            border:none;
+            border-radius:6px;
+            background-color:rgb(247, 250, 246);
+            margin:12px 0;
+        }
+        #button{
+            background-color:#299d5b;
+            font-size:18px;
+            padding:12px;
+            border:none;
+            border-radius:10px;
+            color:rgb(246, 241, 241);
+            width:fit-content;
+            text-align:center;
+            margin:auto;
+        }
+        p{
+            font-size:14px;
+        }
+        #checkbox{
+            width:fit-content;
+            margin:0 6px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>SignUp</h2>
+        <p>Please fill the form to create an account.</p>
+        <form>
+            <label name="email">Name:</label>
+                <input type="email" name="name" placeholder="Enter Your email"/><br/>
+            
+            <label for="password">Set Password:</label>
+                <input type="password" name="password" placeholder="Enter password"/><br/>
+            
+            <label for="password">Repeat Password:</label>
+                <input type="password" name="password" placeholder="Repeat password"/><br/>
+            <p id="remember"><input type="checkbox" id="checkbox"/>Remember me</p>
+            <p>By creating an account you agree to our <a href='#termsandprivacy'>Terma & Privacy</a></p>
+            <button id="button">sing Up</button>
+        </form>
+    </div>
+</body>
+</html>
