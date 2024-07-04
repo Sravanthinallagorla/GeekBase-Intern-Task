@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Family Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"], input[type="number"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #5cb85c;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .family-list {
+            margin-top: 20px;
+        }
+        .family-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .family-list ul li {
+            background: #eee;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create New Family Number</h1>
+        <form id="familyForm">
+            <input type="text" id="familyName" placeholder="Enter family name" required>
+            <input type="number" id="membersCount" placeholder="Enter number of members" required>
+            <input type="tel" id="contactNumber" placeholder="Enter contact number" required>
+            <button type="submit">Create Family</button>
+        </form>
+        <div class="family-list">
+            <h2>Family List</h2>
+            <ul id="familyList"></ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('familyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const familyName = document.getElementById('familyName').value;
+            const membersCount = document.getElementById('membersCount').value;
+            const contactNumber = document.getElementById('contactNumber').value;
+            
+            const li = document.createElement('li');
+            li.textContent = Family Name: ${familyName}, Members: ${membersCount}, Contact: ${contactNumber};
+            
+            document.getElementById('familyList').appendChild(li);
+            
+            document.getElementById('familyForm').reset();
+        });
+    </script>
+</body>
+</html>
