@@ -1,89 +1,129 @@
+Sravanthi, [7/4/2024 7:48 PM]
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create New Family Number</title>
+    <title>Study Courses Overview</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+            margin: 20px;
         }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        input[type="text"], input[type="number"], input[type="tel"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
+        .course {
             border: 1px solid #ccc;
-            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
         }
-        button {
-            padding: 10px 20px;
-            border: none;
-            background: #5cb85c;
-            color: #fff;
-            border-radius: 4px;
-            cursor: pointer;
+        .course h2 {
+            margin-top: 0;
         }
-        .family-list {
-            margin-top: 20px;
-        }
-        .family-list ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .family-list ul li {
-            background: #eee;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 4px;
+        .course-detail {
+            margin-left: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Create New Family Number</h1>
-        <form id="familyForm">
-            <input type="text" id="familyName" placeholder="Enter family name" required>
-            <input type="number" id="membersCount" placeholder="Enter number of members" required>
-            <input type="tel" id="contactNumber" placeholder="Enter contact number" required>
-            <button type="submit">Create Family</button>
-        </form>
-        <div class="family-list">
-            <h2>Family List</h2>
-            <ul id="familyList"></ul>
+    <h1>Study Courses Overview</h1>
+    <div class="course">
+        <h2>1. Introduction to Computer Science</h2>
+        <div class="course-detail">
+            <p><strong>Description:</strong> This course covers the basics of computer science, including programming, algorithms, data structures, and software engineering principles.</p>
+            <p><strong>Instructor:</strong> Dr. John Smith</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <p><strong>Rating:</strong> 4.8/5</p>
+        </div>
+    </div>
+    
+    <div class="course">
+        <h2>2. Advanced Mathematics</h2>
+        <div class="course-detail">
+            <p><strong>Description:</strong> This course explores advanced topics in mathematics, including calculus, linear algebra, and differential equations.</p>
+            <p><strong>Instructor:</strong> Prof. Jane Doe</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <p><strong>Rating:</strong> 4.7/5</p>
+        </div>
+    </div>
+    
+    <div class="course">
+        <h2>3. Modern Physics</h2>
+        <div class="course-detail">
+            <p><strong>Description:</strong> An in-depth study of modern physics concepts, including quantum mechanics, relativity, and particle physics.</p>
+            <p><strong>Instructor:</strong> Dr. Albert Einstein</p>
+            <p><strong>Duration:</strong> 8 weeks</p>
+            <p><strong>Rating:</strong> 4.9/5</p>
+        </div>
+    </div>
+    
+    <div class="course">
+        <h2>4. Introduction to Psychology</h2>
+        <div class="course-detail">
+            <p><strong>Description:</strong> This course provides an overview of psychological principles, including cognitive, developmental, and social psychology.</p>
+            <p><strong>Instructor:</strong> Dr. Sigmund Freud</p>
+            <p><strong>Duration:</strong> 14 weeks</p>
+            <p><strong>Rating:</strong> 4.6/5</p>
+        </div>
+    </div>
+    
+    <div class="course">
+        <h2>5. Business Management</h2>
+        <div class="course-detail">
+            <p><strong>Description:</strong> Learn the fundamentals of business management, including organizational behavior, marketing, and financial management.</p>
+            <p><strong>Instructor:</strong> Prof. Warren Buffett</p>
+            <p><strong>Duration:</strong> 16 weeks</p>
+            <p><strong>Rating:</strong> 4.5/5</p>
         </div>
     </div>
 
-    <script>
-        document.getElementById('familyForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const familyName = document.getElementById('familyName').value;
-            const membersCount = document.getElementById('membersCount').value;
-            const contactNumber = document.getElementById('contactNumber').value;
-            
-            const li = document.createElement('li');
-            li.textContent = Family Name: ${familyName}, Members: ${membersCount}, Contact: ${contactNumber};
-            
-            document.getElementById('familyList').appendChild(li);
-            
-            document.getElementById('familyForm').reset();
-        });
-    </script>
+    <div class="course">
+        <h2>6. Creative Writing</h2>
+        <div class="course-detail">
+            <p><strong>Description:</strong> This course focuses on improving creative writing skills, including fiction, non-fiction, and poetry.</p>
+            <p><strong>Instructor:</strong> Ms. J.K. Rowling</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <p><strong>Rating:</strong> 4.7/5</p>
+        </div>
+    </div>
+
+    <div class="course">
+        <h2>7. Data Science and Machine Learning</h2>
+        <div class="course-detail">
+            <p><strong>Description:</strong> Learn the fundamentals of data science and machine learning, including data analysis, visualization, and model building.</p>
+            <p><strong>Instructor:</strong> Dr. Andrew Ng</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <p><strong>Rating:</strong> 4.9/5</p>
+        </div>
+    </div>
+
+Sravanthi, [7/4/2024 7:48 PM]
+<div class="course">
+        <h2>8. Digital Marketing</h2>
+        <div class="course-detail">
+            <p><strong>Description:</strong> This course covers the essentials of digital marketing, including SEO, social media marketing, and content marketing.</p>
+            <p><strong>Instructor:</strong> Mr. Neil Patel</p>
+            <p><strong>Duration:</strong> 8 weeks</p>
+            <p><strong>Rating:</strong> 4.6/5</p>
+        </div>
+    </div>
+
+    <div class="course">
+        <h2>9. Environmental Science</h2>
+        <div class="course-detail">
+            <p><strong>Description:</strong> An exploration of environmental science principles, including ecology, conservation, and climate change.</p>
+            <p><strong>Instructor:</strong> Dr. Rachel Carson</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <p><strong>Rating:</strong> 4.8/5</p>
+        </div>
+    </div>
+
+    <div class="course">
+        <h2>10. Introduction to Philosophy</h2>
+        <div class="course-detail">
+            <p><strong>Description:</strong> This course introduces the major topics in philosophy, including ethics, metaphysics, and epistemology.</p>
+            <p><strong>Instructor:</strong> Dr. Aristotle</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <p><strong>Rating:</strong> 4.7/5</p>
+        </div>
+    </div>
 </body>
 </html>
